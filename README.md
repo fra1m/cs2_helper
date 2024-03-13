@@ -29,9 +29,9 @@ yarn migrate
 yarn dev или yarn start
 ```
 
-# Для работы проекта, необходимо выполнить следующие шаги через postman:
+# Для работы проекта, необходимо выполнить следующие шаги через POSTMAN:
 
-1. Создайте необходимые роли, путь: http://localhost:3001/roles
+1. Создайте необходимые роли, путь: POST http://localhost:3001/roles
 
-2. Создайте пользователей или администратора, путь: http://localhost:3001/auth/registration. 
+2. Создайте пользователей или администратора, путь: POST http://localhost:3001/auth/registration. 
 Чтобы создать администратора нужно в src/modules/user/user.service в функции createUser поменять 'USER' на 'ADMIN'
